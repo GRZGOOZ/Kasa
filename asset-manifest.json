@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/GRZGOOZ/Kasa.github.io/Kasa/static/css/main.5e4278e7.css",
+    "main.js": "/GRZGOOZ/Kasa.github.io/Kasa/static/js/main.6ed798eb.js",
+    "static/media/banner2.png": "/GRZGOOZ/Kasa.github.io/Kasa/static/media/banner2.de7cc9c4b8033e1ee8ef.png",
+    "static/media/IMG.jpg": "/GRZGOOZ/Kasa.github.io/Kasa/static/media/IMG.f2e0ec30f083077c7856.jpg",
+    "index.html": "/GRZGOOZ/Kasa.github.io/Kasa/index.html",
+    "main.5e4278e7.css.map": "/GRZGOOZ/Kasa.github.io/Kasa/static/css/main.5e4278e7.css.map",
+    "main.6ed798eb.js.map": "/GRZGOOZ/Kasa.github.io/Kasa/static/js/main.6ed798eb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5e4278e7.css",
+    "static/js/main.6ed798eb.js"
+  ]
+}
