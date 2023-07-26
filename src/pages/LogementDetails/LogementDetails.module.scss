@@ -1,0 +1,15 @@
+@use "../../assets/styles/mixins" as mixin;
+
+.accordions {
+  display: flex;
+  justify-content: space-between;
+  @include mixin.xs {
+    flex-direction: column;
+  }
+  & :nth-child(1) {
+    margin-right: 10%;
+    @include mixin.xs {
+      margin-right: auto;
+    }
+  }
+}

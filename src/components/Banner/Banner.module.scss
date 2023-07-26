@@ -1,0 +1,44 @@
+@use "../../assets/styles/mixins" as mixin;
+
+.banner {
+  & .imageContainer {
+    height: 220px;
+    width: 100%;
+    @include mixin.xs {
+      height: 110px;
+    }
+    & img {
+      width: 100%;
+      border-radius: 20px;
+    }
+
+    & .bannerTitle {
+      color: white;
+      height: 40px;
+      margin-top: -130px;
+      @include mixin.xs {
+        height: 20px;
+        font-size: 1.5rem;
+        margin-left: 10px;
+        margin-top: -65px;
+      }
+      & .br {
+        display: none;
+        @include mixin.xs {
+          display: block;
+        }
+      }
+    }
+  }
+  & .imageContainerNoTitle {
+    height: 220px;
+    width: 100%;
+    @include mixin.xs {
+      height: 220px;
+    }
+    & img {
+      width: 100%;
+      border-radius: 20px;
+    }
+  }
+}

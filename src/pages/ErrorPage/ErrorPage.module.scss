@@ -1,0 +1,29 @@
+@use "../../assets/styles/mixins" as mixin;
+
+.error {
+  text-align: center;
+  min-height: 100vh;
+  &Status {
+    font-size: 20rem;
+    margin-bottom: 100px;
+    @include mixin.xs {
+      font-size: 8rem;
+    }
+    @include mixin.sm {
+      font-size: 15rem;
+    }
+  }
+  &Message {
+    font-size: 2rem;
+    margin-bottom: 100px;
+    @include mixin.sm {
+      font-size: 1.5rem;
+    }
+    @include mixin.xs {
+      font-size: 1rem;
+    }
+  }
+  & a {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,69 @@
+@use "../../../../assets/styles/mixins" as mixin;
+
+.carousel {
+  position: relative;
+  &_content {
+    height: 415px;
+    overflow: hidden;
+    border-radius: 20px;
+    width: 100%;
+    & img {
+      width: 100%;
+    }
+    @include mixin.xs {
+      height: 250px;
+    }
+  }
+
+  &_count {
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    font-weight: bold;
+    @include mixin.xs {
+      font-size: 0.9rem;
+    }
+  }
+  &_prev,
+  &_next {
+    background: none;
+    border: none;
+    appearance: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    &_arrow {
+      width: 50px;
+      display: block;
+      border-bottom: 10px solid white;
+      height: 50px;
+      border-right: 10px solid white;
+      position: absolute;
+      @include mixin.xs {
+        height: 25px;
+        width: 25px;
+        border-right: 5px solid white;
+        border-bottom: 5px solid white;
+      }
+    }
+  }
+  &_prev {
+    &_arrow {
+      left: 60px;
+      transform: rotate(135deg);
+      z-index: 1;
+      @include mixin.xs {
+        left: 30px;
+      }
+    }
+  }
+  &_next {
+    &_arrow {
+      right: 60px;
+      transform: rotate(318deg);
+      @include mixin.xs {
+        right: 30px;
+      }
+    }
+  }
+}

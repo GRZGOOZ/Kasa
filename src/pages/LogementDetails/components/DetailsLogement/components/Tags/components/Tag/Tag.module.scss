@@ -1,0 +1,21 @@
+@use "../../../../../../../../assets/styles/mixins" as mixin;
+
+.tag {
+  color: white;
+  font-weight: bold;
+  background-color: var(--primary);
+  max-height: 50px;
+  border-radius: 20px;
+  margin-right: 10px;
+  padding: 5px 20px 5px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  white-space: nowrap;
+  @include mixin.xs {
+    font-size: 0.8rem;
+    padding: 5px 10px 5px 10px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+}
